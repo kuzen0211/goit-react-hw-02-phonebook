@@ -1,4 +1,5 @@
 import { Label, Input } from './Filter.styled';
+import PropTypes from 'prop-types';
 
 export const Filter = ({ filterContact }) => {
   return (
@@ -9,4 +10,8 @@ export const Filter = ({ filterContact }) => {
       </Label>
     </div>
   );
+};
+
+Filter.propType = {
+  filterContact: PropTypes.func.isRequired,
 };

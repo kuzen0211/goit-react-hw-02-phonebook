@@ -1,4 +1,5 @@
 import { TextTitle } from './Ttitle.styled';
+import PropTypes from 'prop-types';
 
 export const Title = ({ title }) => {
   return (
@@ -6,4 +7,8 @@ export const Title = ({ title }) => {
       <TextTitle>{title}</TextTitle>
     </>
   );
+};
+
+Title.propType = {
+  title: PropTypes.string.isRequired,
 };

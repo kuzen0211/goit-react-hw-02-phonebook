@@ -37,13 +37,7 @@ export class App extends Component {
   };
 
   upperCaseWord = data => {
-    const arr = data.split(' ');
-
-    for (let i = 0; i < arr.length; i++) {
-      arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1);
-    }
-
-    return arr.join(' ');
+    return data[0].toUpperCase() + data.substring(1);
   };
 
   render() {
